@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add Shift</title>
+    <style>
+        body {
+            background-color: #f3f9ff;      /* page background */
+            display: flex;
+            justify-content: center;        /* horizontal center */
+            align-items: center;            /* vertical center */
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .shift-box {
+            background-color: #ffffff;
+            padding: 25px 40px;
+            border-radius: 8px;
+            box-shadow: 0 0 12px rgba(0,0,0,0.2);
+            text-align: center;              /* text center */
+        }
+
+        input {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+            background-color: #1976d2;
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #1565c0;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="shift-box">
+    <h2>Add Shift</h2>
+
+    <form action="AddShift" method="post">
+        Employee Username:
+        <input type="text" name="username"><br><br>
+
+        Date:
+        <input type="date" name="shift_date"><br><br>
+
+        Start Time:
+        <input type="time" name="start"><br><br>
+
+        End Time:
+        <input type="time" name="end"><br><br>
+
+        <input type="submit" value="Add Shift">
+    </form>
+</div>
+
+</body>
+</html>
